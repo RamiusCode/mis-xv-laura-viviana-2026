@@ -1,0 +1,387 @@
+---
+// SobreFoto.astro
+---
+
+<!-- ═══════════════════════════════════════════════════════════ --><!-- 💌 SECCIÓN: SOBRE CON FOTO + TARJETAS                       --><!-- ═══════════════════════════════════════════════════════════ -->
+<section class="relative w-full pb-4 sm:pb-20 md:pb-24 lg:pb-32">
+    <!-- 🌸 FLORES ARRIBA (todo el ancho) -->
+    <div class="w-full" id="flores-container">
+        <img
+            src="/imagenes/floresarriba.webp"
+            alt="Flores decorativas"
+            class="block w-full h-auto"
+            id="flores-arriba"
+        />
+    </div>
+
+    <div class="max-w-6xl mx-auto px-2 sm:px-6 lg:px-8">
+        <!-- 👑 CORONA + TÍTULO + NOMBRE -->
+        <div
+            class="w-full flex flex-col items-center text-center -mt-10 sm:-mt-14 md:-mt-20 mb-6 sm:mb-10 md:mb-14"
+            id="titulo-container"
+        >
+            <img
+                src="/imagenes/corona.png"
+                alt="Corona"
+                class="w-40 sm:w-48 md:w-56 h-auto mb-4 sm:mb-6"
+                id="corona-xv"
+            />
+            <p
+                class="font-crimson text-2xl sm:text-3xl md:text-4xl text-[#8a0306] uppercase tracking-wide"
+            >
+                Mis XV Años
+            </p>
+        </div>
+
+        <!-- 📷 FOTO 1 (sin marco) -->
+        <div
+            class="relative left-1/2 -translate-x-1/2 w-screen flex justify-center items-center mb-6 sm:mb-10 md:mb-14"
+            id="foto-container"
+        >
+            <!-- 🌹 FLORES LATERALES (chocando a los costados) -->
+            <img
+                src="/imagenes/floreslateral.png"
+                alt="Flores laterales"
+                class="absolute left-0 top-1/2 -translate-y-1/2 w-10 sm:w-14 md:w-16 h-auto z-10 pointer-events-none select-none drop-shadow"
+            />
+            <img
+                src="/imagenes/floreslateral.png"
+                alt="Flores laterales"
+                class="absolute right-0 top-1/2 -translate-y-1/2 scale-x-[-1] w-10 sm:w-14 md:w-16 h-auto z-10 pointer-events-none select-none drop-shadow"
+            />
+
+            <div class="relative w-full max-w-[15rem] sm:max-w-xs md:max-w-sm">
+                <img
+                    src="/imagenes/foto1.webp"
+                    alt="Foto quinceañera"
+                    class="w-full h-auto"
+                    id="foto-1"
+                />
+            </div>
+        </div>
+
+        <!-- 📇 TARJETAS -->
+        <div
+            class="relative w-full flex flex-row justify-center items-start gap-3 sm:gap-6 md:gap-12 lg:gap-16"
+            id="tarjetas-container"
+        >
+            <!-- ✦ DEFINICIÓN DEL ORNAMENTO DORADO DE ESQUINA (reutilizable) -->
+            <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+                <symbol id="corner-orn" viewBox="0 0 60 60">
+                    <path d="M60 4H22C12 4 4 12 4 22v38" fill="none" stroke="#c8a24c" stroke-width="1.3"/>
+                    <path d="M60 9H24C16 9 9 16 9 24v36" fill="none" stroke="#c8a24c" stroke-width="0.6"/>
+                    <path d="M9 27c-4 0-6.6 3-6.6 6.9 0 2.6 1.7 4.4 4 4.4 2.2 0 3.6-1.6 3.6-3.6 0-1.5-.9-2.6-2.2-2.6-.8 0-1.5.4-1.8 1 .3-2 1.9-3.4 3.7-3.6" fill="#c8a24c"/>
+                    <path d="M27 9c0-1.8 1.4-3.2 3.2-3.2" fill="none" stroke="#c8a24c" stroke-width="0.6"/>
+                    <circle cx="24" cy="9" r="1.1" fill="#c8a24c"/>
+                    <circle cx="9" cy="24" r="1.1" fill="#c8a24c"/>
+                </symbol>
+            </svg>
+
+            <!-- 📇 TARJETA IZQUIERDA -->
+            <div
+                class="relative w-1/2 max-w-[160px] xs:max-w-[160px] sm:max-w-[200px] md:max-w-[240px] lg:max-w-[260px] mt-8 sm:mt-8 md:mt-12"
+                id="tarjeta-izquierda"
+            >
+                <div
+                    class="relative rounded-sm shadow-xl overflow-visible h-full"
+                >
+                    <img
+                        src="/imagenes/fondoplomo.png"
+                        alt="Fondo tarjeta"
+                        class="absolute inset-0 w-full h-full object-cover"
+                    />
+                    <!-- 🌹 FLORES LATERALES -->
+                    <img
+                        src="/imagenes/rosalateral.png"
+                        alt="Flores decorativas"
+                        class="absolute -top-6 -left-3 sm:-top-4 sm:-left-4 w-10 xs:w-16 sm:w-20 md:w-24 h-auto z-30 pointer-events-none select-none"
+                    />
+                    <!-- MARCO DORADO FINO Y ELEGANTE CON ADORNOS -->
+                    <div class="absolute inset-3 sm:inset-4 pointer-events-none z-20">
+                        <div class="absolute inset-0" style="border:1px solid #c8a24c;"></div>
+                        <div class="absolute inset-[4px]" style="border:1px solid rgba(200,162,76,0.5);"></div>
+                        <svg viewBox="0 0 60 60" class="absolute top-0 left-0 w-6 h-6 sm:w-8 sm:h-8"><use href="#corner-orn"></use></svg>
+                        <svg viewBox="0 0 60 60" class="absolute top-0 right-0 w-6 h-6 sm:w-8 sm:h-8" style="transform:scaleX(-1)"><use href="#corner-orn"></use></svg>
+                        <svg viewBox="0 0 60 60" class="absolute bottom-0 left-0 w-6 h-6 sm:w-8 sm:h-8" style="transform:scaleY(-1)"><use href="#corner-orn"></use></svg>
+                        <svg viewBox="0 0 60 60" class="absolute bottom-0 right-0 w-6 h-6 sm:w-8 sm:h-8" style="transform:scale(-1,-1)"><use href="#corner-orn"></use></svg>
+                    </div>
+                    <div
+                        class="relative p-6 sm:p-6 md:p-8 h-full flex flex-col justify-between min-h-[320px] xs:min-h-[360px] sm:min-h-[420px] md:min-h-[480px] z-10"
+                    >
+                        <div class="w-full">
+                            <p
+                                class="font-crimson text-base xs:text-lg sm:text-xl md:text-2xl text-[#8a0306] leading-tight text-left"
+                            >
+                                GUARDA <br />LA FECHA
+                            </p>
+                        </div>
+                        <div
+                            class="w-full flex-grow flex flex-col justify-center items-center"
+                        >
+                            <p
+                                class="font-crimson text-xs sm:text-sm text-[#c8a24c] uppercase tracking-[0.3em] pl-[0.3em] text-center mb-1"
+                            >
+                                Sábado
+                            </p>
+                            <p
+                                class="font-charm text-5xl xs:text-6xl sm:text-7xl md:text-8xl text-[#8a0306] font-bold leading-none"
+                            >
+                                12
+                            </p>
+                            <p
+                                class="font-great-vibes text-3xl xs:text-4xl sm:text-5xl md:text-6xl text-[#8a0306] mt-1"
+                            >
+                                Septiembre
+                            </p>
+                            <p
+                                class="font-charm text-base sm:text-base text-[#c8a24c] mt-1"
+                            >
+                                2026
+                            </p>
+                        </div>
+                        <div class="w-full">
+                            <p
+                                class="font-crimson text-base xs:text-[10px] sm:text-xs text-[#8a0306] uppercase tracking-widest leading-tight text-right"
+                            >
+                                CELEBREMOS<br />JUNTOS
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 📇 TARJETA DERECHA -->
+            <div
+                class="relative w-1/2 max-w-[160px] xs:max-w-[160px] sm:max-w-[200px] md:max-w-[240px] lg:max-w-[260px]"
+                id="tarjeta-derecha"
+            >
+                <div
+                    class="relative rounded-sm shadow-xl overflow-visible h-full"
+                >
+                    <img
+                        src="/imagenes/fondorojo.png"
+                        alt="Fondo tarjeta"
+                        class="absolute inset-0 w-full h-full object-cover"
+                    />
+                    <!-- 🌹 FLORES ABAJO -->
+                    <img
+                        src="/imagenes/rosalateral.png"
+                        alt="Flores decorativas"
+                        class="absolute -bottom-6 -right-3 sm:-bottom-4 sm:-right-4 w-12 xs:w-16 sm:w-20 md:w-24 h-auto z-30 pointer-events-none select-none"
+                        style="transform: scale(-1, 1);"
+                    />
+                    <!-- MARCO DORADO FINO Y ELEGANTE CON ADORNOS -->
+                    <div class="absolute inset-3 sm:inset-4 pointer-events-none z-20">
+                        <div class="absolute inset-0" style="border:1px solid #c8a24c;"></div>
+                        <div class="absolute inset-[4px]" style="border:1px solid rgba(200,162,76,0.5);"></div>
+                        <svg viewBox="0 0 60 60" class="absolute top-0 left-0 w-6 h-6 sm:w-8 sm:h-8"><use href="#corner-orn"></use></svg>
+                        <svg viewBox="0 0 60 60" class="absolute top-0 right-0 w-6 h-6 sm:w-8 sm:h-8" style="transform:scaleX(-1)"><use href="#corner-orn"></use></svg>
+                        <svg viewBox="0 0 60 60" class="absolute bottom-0 left-0 w-6 h-6 sm:w-8 sm:h-8" style="transform:scaleY(-1)"><use href="#corner-orn"></use></svg>
+                        <svg viewBox="0 0 60 60" class="absolute bottom-0 right-0 w-6 h-6 sm:w-8 sm:h-8" style="transform:scale(-1,-1)"><use href="#corner-orn"></use></svg>
+                    </div>
+                    <div
+                        class="relative p-6 sm:p-6 md:p-8 text-center flex flex-col justify-center min-h-[320px] xs:min-h-[360px] sm:min-h-[420px] md:min-h-[480px] z-10"
+                    >
+                        <div class="mb-2 flex flex-col items-center">
+                            <p
+                                class="font-crimson text-xl sm:text-lg md:text-xl text-[#f0d38a] uppercase tracking-widest font-semibold mb-2 sm:mb-4"
+                            >
+                                Mis XV Años
+                            </p>
+                            <img
+                                src="/imagenes/separador1.png"
+                                alt="Separador"
+                                class="w-28 sm:w-32 h-auto opacity-90"
+                            />
+                        </div>
+                        <h3
+                            class="font-great-vibes text-4xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-[#f3e3c3] mb-2 sm:mb-3 leading-snug"
+                        >
+                            Laura <br /> Viviana
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- 🎵 BOTÓN FLOTANTE PLAY/PAUSE                                -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<button
+    id="btn-audio-control"
+    aria-label="Controlar música"
+    class="fixed bottom-6 right-6 z-[9999] w-12 h-12 rounded-full shadow-lg
+           bg-[#8a0306] border border-[#c8a24c] flex items-center justify-center
+           transition-all duration-300 hover:scale-110 active:scale-95"
+    style="opacity: 0; pointer-events: none;"
+>
+    <svg
+        id="icono-pause"
+        xmlns="http://www.w3.org/2000/svg"
+        class="w-5 h-5 text-white"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+    >
+        <rect x="6" y="4" width="4" height="16" rx="1"></rect>
+        <rect x="14" y="4" width="4" height="16" rx="1"></rect>
+    </svg>
+    <svg
+        id="icono-play"
+        xmlns="http://www.w3.org/2000/svg"
+        class="w-5 h-5 text-white hidden"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+    >
+        <path d="M8 5v14l11-7z"></path>
+    </svg>
+</button>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!-- 🎬 ANIMACIONES CON GSAP                                     -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<script>
+    import { gsap } from "gsap";
+    import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    document.addEventListener("DOMContentLoaded", () => {
+        // ═══ FLORES ARRIBA ═══
+        gsap.fromTo(
+            "#flores-arriba",
+            { opacity: 0, y: -20 },
+            {
+                opacity: 1,
+                y: 0,
+                duration: 1.2,
+                ease: "power2.out",
+                scrollTrigger: {
+                    trigger: "#flores-container",
+                    start: "top 85%",
+                    toggleActions: "play none none reset",
+                },
+            },
+        );
+
+        // ═══ FOTO 1 ═══
+        gsap.fromTo(
+            "#foto-1",
+            { opacity: 0, scale: 0.92 },
+            {
+                opacity: 1,
+                scale: 1,
+                duration: 1.4,
+                ease: "power2.out",
+                delay: 0.3,
+                scrollTrigger: {
+                    trigger: "#foto-container",
+                    start: "top 85%",
+                    toggleActions: "play none none reset",
+                },
+            },
+        );
+
+        // ═══ TARJETA IZQUIERDA ═══
+        gsap.fromTo(
+            "#tarjeta-izquierda",
+            { opacity: 0, x: -50 },
+            {
+                opacity: 1,
+                x: 0,
+                duration: 1.6,
+                ease: "sine.out",
+                delay: 0.2,
+                scrollTrigger: {
+                    trigger: "#tarjetas-container",
+                    start: "top 80%",
+                    toggleActions: "play none none reset",
+                },
+            },
+        );
+
+        // ═══ TARJETA DERECHA ═══
+        gsap.fromTo(
+            "#tarjeta-derecha",
+            { opacity: 0, x: 50 },
+            {
+                opacity: 1,
+                x: 0,
+                duration: 1.6,
+                ease: "sine.out",
+                delay: 0.4,
+                scrollTrigger: {
+                    trigger: "#tarjetas-container",
+                    start: "top 80%",
+                    toggleActions: "play none none reset",
+                },
+            },
+        );
+
+        // ═══ BOTÓN FLOTANTE PLAY/PAUSE ═══
+        const btnAudio = document.getElementById(
+            "btn-audio-control",
+        ) as HTMLButtonElement;
+        const iconoPlay = document.getElementById("icono-play");
+        const iconoPause = document.getElementById("icono-pause");
+
+        const intervalo = setInterval(() => {
+            const audio = (window as any).audioGlobal;
+            if (audio) {
+                clearInterval(intervalo);
+                gsap.to(btnAudio, {
+                    opacity: 1,
+                    duration: 0.5,
+                    ease: "power2.out",
+                    onStart: () => {
+                        btnAudio.style.pointerEvents = "auto";
+                    },
+                });
+                iconoPlay?.classList.add("hidden");
+                iconoPause?.classList.remove("hidden");
+
+                btnAudio.addEventListener("click", () => {
+                    const audioActual = (window as any).audioGlobal;
+                    const reproduciendo = (window as any)
+                        .estaReproduciendoGlobal;
+                    if (!audioActual) return;
+                    if (reproduciendo) {
+                        audioActual.pause();
+                        (window as any).estaReproduciendoGlobal = false;
+                        iconoPause?.classList.add("hidden");
+                        iconoPlay?.classList.remove("hidden");
+                    } else {
+                        audioActual.play();
+                        (window as any).estaReproduciendoGlobal = true;
+                        iconoPlay?.classList.add("hidden");
+                        iconoPause?.classList.remove("hidden");
+                    }
+                    gsap.fromTo(
+                        btnAudio,
+                        { scale: 0.85 },
+                        { scale: 1, duration: 0.3, ease: "back.out(2)" },
+                    );
+                });
+            }
+        }, 300);
+    });
+</script>
+
+<style>
+    #tarjetas-container {
+        perspective: 1000px;
+    }
+    #tarjeta-izquierda > div,
+    #tarjeta-derecha > div {
+        transition:
+            transform 0.3s ease,
+            box-shadow 0.3s ease;
+    }
+    #tarjeta-izquierda > div:hover,
+    #tarjeta-derecha > div:hover {
+        transform: translateY(-8px) scale(1.02);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    }
+</style>
